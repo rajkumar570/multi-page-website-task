@@ -525,7 +525,75 @@ ABOUT
     display:inline-block;
 }
 
-
+/* ============================
+     TOP BAR
+     ============================ */
+     .topbar {
+        background: var(--topbar-bg);
+        padding: 10px 0;
+        font-size: 13px;
+        color: #adb5bd;
+      }
+      .topbar a { color: #adb5bd; }
+      .topbar a:hover { color: var(--white); }
+      .topbar .sep { margin: 0 12px; opacity: .35; }
+      .topbar-icon { color: var(--btn) !important; font-size: 12px; }
+      
+      .topbar-social a {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 28px; height: 28px;
+        border: 1px solid rgba(255,255,255,.18);
+        border-radius: 4px;
+        color: #adb5bd; font-size: 12px; margin-left: 6px;
+        transition: all .2s;
+      }
+      .topbar-social a:hover { background: var(--btn); border-color: var(--btn); color: #fff; }
+      
+      /* ============================
+         NAVBAR
+         ============================ */
+      .main-navbar {
+        background: #fff;
+        box-shadow: 0 2px 20px rgba(0,0,0,.08);
+        padding: 0;
+        position: sticky; top: 0; z-index: 1000;
+      }
+      
+      .logo-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 24px; font-weight: 800;
+        color: var(--heading);
+      }
+      .logo-accent { color: var(--btn); }
+      
+      .main-navbar .nav-link {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600; font-size: 14.5px;
+        color: var(--heading) !important;
+        padding: 24px 16px !important;
+      }
+      .main-navbar .nav-link:hover,
+      .main-navbar .nav-link.active { color: var(--btn) !important; }
+      
+      .main-navbar .dropdown-menu {
+        border: none;
+        box-shadow: 0 10px 40px rgba(0,0,0,.12);
+        border-radius: 8px; padding: 8px 0; min-width: 200px;
+      }
+      .main-navbar .dropdown-item {
+        font-size: 13.5px; font-weight: 500;
+        padding: 9px 20px; color: var(--heading);
+      }
+      .main-navbar .dropdown-item:hover { color: var(--btn); background: var(--tag-bg); }
+      
+      .btn-quote {
+        background: var(--btn); color: #fff !important;
+        border-radius: 6px; padding: 11px 26px !important;
+        font-size: 14px; font-weight: 700;
+        white-space: nowrap; transition: background .2s;
+      }
+      .btn-quote:hover { background: var(--btn-hover); }
+      
 /* =========================
 PRICING
 ========================= */

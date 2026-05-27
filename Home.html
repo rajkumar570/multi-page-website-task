@@ -26,68 +26,88 @@
     TOPBAR
     ========================= -->
 
-    <div class="topbar">
-
-        <div class="container topbar-content">
-
-            <div class="top-left">
-
-                <p><i class="fa-solid fa-location-dot"></i> Jones Street, New York, USA</p>
-
-                <p><i class="fa-solid fa-envelope"></i> Info@example.com</p>
-
-                <p><i class="fa-solid fa-phone"></i> +70 264 566 579</p>
-
-            </div>
-
-            <div class="social-icons">
-
-                <i class="fa-brands fa-facebook-f"></i>
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-                <i class="fa-brands fa-twitter"></i>
-
-                <i class="fa-brands fa-instagram"></i>
-
-            </div>
-
+<!-- ===== TOP BAR ===== -->
+<div class="topbar d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <div class="d-flex align-items-center gap-1 flex-wrap">
+          <i class="fas fa-map-marker-alt topbar-icon"></i>
+          <span>Jones Street, New York, USA</span>
+          <span class="sep">|</span>
+          <i class="fas fa-envelope topbar-icon"></i>
+          <a href="mailto:Info@example.com">Info@example.com</a>
+          <span class="sep">|</span>
+          <i class="fas fa-phone topbar-icon"></i>
+          <a href="tel:123456789">+70 264 566 579</a>
         </div>
-
+        <div class="topbar-social">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
     </div>
-
-    <!-- =========================
-    NAVBAR
-    ========================= -->
-
-    <div class="container navbar-wrapper">
-
-        <nav class="navbar">
-
-            <div class="logo">
-
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
-
-                <h2>Itco</h2>
-
-            </div>
-
-            <div class="nav-links">
-
-                <a href="#">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="team.html">Team</a>
-                <a href="blog-details.html">Blog</a>
-                <a href="contact.html">Contact</a>
-
-            </div>
-
-            <a href="#" class="quote-btn">Get A Free Quote</a>
-
-        </nav>
-
+  </div>
+  
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <div class="logo">
+  
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
+  
+          <h2>Itco</h2>
+  
+      </div>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Home.html" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Home.html">Home One</a></li>
+              <li><a class="dropdown-item" href="#">Home Two</a></li>
+              <li><a class="dropdown-item" href="#">Home Three</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html">Services</a></li>
+              <li><a class="dropdown-item" href="service-details.html">Service Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="team.html" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="#">Team Details</a></li>
+              <li><a class="dropdown-item" href="project.html">Projects</a></li>
+              <li><a class="dropdown-item" href="#">Project Details</a></li>
+              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#">Price Plan</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="btn-quote">Get A Free Quote</a>
+      </div>
     </div>
+  </nav>
+  
 
     <!-- =========================
     HERO SECTION
